@@ -2,7 +2,6 @@
 # uses this file as the main entry point of the application.
 
 import math
-import terminal
 import winim/inc/mmsystem
 
 const SRATE = 44100
@@ -39,7 +38,7 @@ proc main() =
   waveOutWrite(hWave, whdr.addr, int32(sizeof(WAVEHDR)))
 
   echo("終了するには何かキーを押してください:")
-  discard getch()
+  discard readLine(stdin)
 
 
 when isMainModule:
