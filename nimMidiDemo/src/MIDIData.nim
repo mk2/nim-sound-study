@@ -2,8 +2,6 @@ const dllname = "MIDIData.dll"
 
 {.pragma: mididatalib_api, stdcall, importc, discardable, dynlib: dllname.}
 
-import winim/winstr
-
 ## ****************************************************************************
 ##
 ## 　MIDIData.h - MIDIDataヘッダーファイル                  (C)2002-2020 くず
